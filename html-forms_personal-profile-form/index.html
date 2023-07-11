@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Your Personal Profile</title>
+  <style>
+    .red-button {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <h2>Create Your Personal Profile</h2>
+
+  <form action="/submit_profile" method="post">
+    <p>We want to get to know you! Please enter your personal information.</p>
+    <fieldset>
+      <legend>Personal Information</legend>
+
+      <label for="firstName">First Name:</label><br>
+      <input type="text" id="firstName" name="firstName" required><br><br>
+    
+      <label for="lastName">Last Name:</label><br>
+      <input type="text" id="lastName" name="lastName" required><br><br>
+    
+      <label for="yourBirthday">Your Birthday:</label><br>
+      <input type="date" id="yourBirthday" name="yourBirthday" required><br><br>
+    </fieldset>
+    
+    <p>Can you tell us a little bit more? We promise not to annoy you with unwanted ads.</p>
+    
+    <fieldset>
+      <legend>Further Information</legend>
+      
+      <label for="favoriteColor">Favorite Color:</label><br>
+      <input type="color" id="favoriteColor" name="favoriteColor" value="#ff0000" required><br><br>
+      
+      <label for="favoritePet">What's your favorite pet?</label><br>
+      <select id="favoritePet" name="favoritePet" required>
+        <option value="">—Please choose an option—</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="bird">Bird</option>
+        <option value="fish">Fish</option>
+      </select><br><br>
+    </fieldset>
+
+    <input type="submit" value="Submit" class="red-button">
+  </form>
+
+  <link rel="stylesheet" href="./css/styles.css" />
+</body>
+</html>
+
+ 
