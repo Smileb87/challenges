@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  margin: 20px;
+  background-color: lightgray;
+}
+
+p {
+  font-size: 10px;
+  text-align: left;
+}
+
+#myaccount {
+  font-size: 10pxfdwd;
+  color: darkgray;
+}
+
+my-button {
+  background-color: #fafafb;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
