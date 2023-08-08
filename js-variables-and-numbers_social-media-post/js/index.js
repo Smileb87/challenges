@@ -1,34 +1,31 @@
-console.clear();
+newFunction();
 
-/*
-1. Create the data for a small social media post. Create a const variable for each data point listed below.:
-	- a title
-	- a text
-	- the number of likes
-	- the user who created the post
-	- a boolean called isReported
-*/
+// Create the variables for a social media post
+let postTitle = "My Summer Vacation";
+let postText = "I just returned from a 2-week summer vacation in Hawaii. It was a blast!";
+let postLikes = 200;
+let postUser = "TravelLover123";
+let postIsReported = false;
 
-// --v-- const title = "Exciting announcement"; --v--//
-const title = "Exciting announcement";
-const text = "We are thrilled to announce the launch of our new product!";
-let likes = 100;
-const createdBy = "JohnDoe";
-let isReported = false;
+function newFunction() {
+	console.clear();
+}
 
-// --^-- console.log(title); --^--//
-console.log(text);
-console.log(likes);
-console.log(createdBy);
-console.log(isReported);
+// Function to display the post
+function displayPost() {
+    console.log(`Title: ${postTitle}`);
+    console.log(`Text: ${postText}`);
+    console.log(`Likes: ${postLikes}`);
+    console.log(`Created By: ${postUser}`);
+    console.log(`Is Reported: ${postIsReported}`);
+}
 
-likes++;
-console.log(likes);
+// Increase the likes by one
+function increaseLikes() {
+    postLikes++;
+    console.log(`New Like Count: ${postLikes}`);
+}
 
-/*
-2. Log all variables to the console. Increase the likes by one and log the amount of likes again. Adapt your code from 1.1 if necessary.
-*/
-
-// --v-- write your code here --v--
-
-// --^-- write your code here --^--
+// Call the functions
+displayPost();
+increaseLikes();

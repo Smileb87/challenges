@@ -1,0 +1,22 @@
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 90%;
+    font-size: 25px;
+}
+
+.list__item {
+    /* background: #fff; */
+    padding: 0.75rem;
+    margin: 0 0 1rem 0;
+    /* border: 1px solid #adadad; */
+    border-radius: 4px;
+}
+
+.list__item input[type='checkbox'] {
+    transform: scale(1.5);
+}
+.list__item span {
+    padding-left: 10px;
+}
